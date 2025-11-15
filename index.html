@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle Game</title>
+    <style>
+        body {
+            margin:0; padding:0;
+            background:#111;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            overflow:hidden;
+        }
+        #board {
+            width:360px;
+            height:360px;
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(4,1fr);
+            gap:4px;
+        }
+        .cell {
+            background:#222;
+            border-radius:6px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .cell img {
+            width:80%;
+            height:80%;
+            user-select:none;
+        }
+
+        #winEffect {
+            position:absolute;
+            width:200px;
+            height:200px;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            opacity:0;
+            pointer-events:none;
+        }
+
+        @keyframes fadeInCenter {
+            0%   { opacity:0; transform:translate(-50%,-50%) scale(0.5); }
+            100% { opacity:1; transform:translate(-50%,-50%) scale(1); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="board"></div>
+    <img id="winEffect" src="assets/win.png">
+
+    <script src="loader.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>

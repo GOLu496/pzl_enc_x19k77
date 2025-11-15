@@ -1,0 +1,32 @@
+{
+  "1": [
+    ["king","empty","block","empty"],
+    ["empty","rook","empty","empty"],
+    ["empty","empty","bishop","empty"],
+    ["empty","empty","empty","star"]
+  ],
+  "2": [
+    ["empty","knight","empty","empty"],
+    ["king","block","empty","bishop"],
+    ["empty","rook","empty","empty"],
+    ["empty","empty","empty","star"]
+  ],
+  "3": [
+    ["empty","rook","empty","empty"],
+    ["empty","king","empty","block"],
+    ["empty","bishop","empty","empty"],
+    ["star","empty","empty","empty"]
+  ],
+  "4": [
+    ["empty","empty","bishop","empty"],
+    ["block","knight","empty","empty"],
+    ["king","empty","empty","empty"],
+    ["empty","rook","empty","star"]
+  ],
+  "5": [
+    ["empty","empty","empty","king"],
+    ["bishop","block","empty","empty"],
+    ["empty","rook","empty","empty"],
+    ["star","empty","empty","block"]
+  ]
+}
